@@ -4,7 +4,7 @@ from textblob import TextBlob
 stocks = ["NVDA", "AAPL", "TSLA", "MSFT"]
 
 def analyze_sentiment(text):
-    # This turns text into a "blob" and gives a polarity score from -1 to 1
+    
     blob = TextBlob(text)
     score = blob.sentiment.polarity
     if score > 0.1: return "🌟 POSITIVE"
